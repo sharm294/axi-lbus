@@ -23,7 +23,8 @@
 module lbus_to_axi #(
     parameter M_TDATA_WIDTH = 8,
     parameter FIFO_DEPTH = 16,
-    parameter SYNC_STAGES = 2
+    parameter SYNC_STAGES = 2,
+    parameter REGISTERED = 0
 )(
 
     //clocking and reset
@@ -169,19 +170,44 @@ module lbus_to_axi #(
 
     wire fifo_1_tvalid;
     wire [(LBUS_SEG_BITS*LBUS_SEGMENT_CNT)-1:0] fifo_1_tdata;
-
-    axis_data_fifo_0 /*#(
+    
+    
+    wire [(LBUS_SEG_BITS*LBUS_SEGMENT_CNT)-1:0] s_lbus_tdata_wire;    
+    wire s_lbus_tvalid_wire;
+    wire [23:0] s_lbus_tuser_wire;
+    generate
+        if(REGISTERED) begin
+            reg [(LBUS_SEG_BITS*LBUS_SEGMENT_CNT)-1:0] s_lbus_tdata_reg;
+            reg s_lbus_tvalid_reg;
+            reg [23:0] s_lbus_tuser_reg;
+            always @(posedge rx_clk) begin
+                s_lbus_tdata_reg <= s_lbus_tdata;
+                s_lbus_tvalid_reg <= s_lbus_tvalid;
+                s_lbus_tuser_reg <= {ena,mtyin,eop};
+            end
+            assign s_lbus_tdata_wire = s_lbus_tdata_reg;
+            assign s_lbus_tvalid_wire = s_lbus_tvalid_reg;
+            assign s_lbus_tuser_wire = s_lbus_tuser_reg;
+        end
+        else begin
+            assign s_lbus_tdata_wire = s_lbus_tdata;
+            assign s_lbus_tvalid_wire = s_lbus_tvalid;
+            assign s_lbus_tuser_wire = {ena,mtyin,eop};
+        end
+    endgenerate
+            
+    l2a_bufferFIFO /*#(
         .TDATA_WIDTH_BYTES(LBUS_SEGMENT_WIDTH*LBUS_SEGMENT_CNT),
         .TUSER_WIDTH_BITS(20),
         .FIFO_DEPTH_WORDS(FIFO_DEPTH),
         .PACKET_MODE(1)
-    )*/ fifo_0 (
+    )*/ l2a_bufferFIFO_0 (
         .s_axis_aresetn(rx_resetn),          // input wire s_axis_aresetn
         .s_axis_aclk(rx_clk),                // input wire s_axis_aclk
-        .s_axis_tvalid(s_lbus_tvalid),            // input wire s_axis_tvalid
+        .s_axis_tvalid(s_lbus_tvalid_wire),            // input wire s_axis_tvalid
         .s_axis_tready(),
-        .s_axis_tdata(s_lbus_tdata),              // input wire [127 : 0] s_axis_tdata
-        .s_axis_tuser({ena,mtyin,eop}),              // input wire [6 : 0] s_axis_tuser
+        .s_axis_tdata(s_lbus_tdata_wire),              // input wire [127 : 0] s_axis_tdata
+        .s_axis_tuser(s_lbus_tuser_wire),              // input wire [6 : 0] s_axis_tuser
         .m_axis_tvalid(fifo_1_tvalid),            // output wire m_axis_tvalid
         .m_axis_tready(s_lbus_tready),            // input wire m_axis_tready
         .m_axis_tdata(fifo_1_tdata),              // output wire [127 : 0] m_axis_tdata
@@ -198,11 +224,11 @@ module lbus_to_axi #(
     wire [(M_TDATA_WIDTH*8)-1:0] m_lbus_tdata;
     wire [M_TDATA_WIDTH-1:0] m_lbus_tkeep;
     wire [(TUSER_PER_BYTE*M_TDATA_WIDTH)-1:0] m_lbus_tuser;
-    axis_dwidth_converter_0 /*#(
+    l2a_converter /*#(
         .S_TDATA_WIDTH(LBUS_SEGMENT_WIDTH*LBUS_SEGMENT_CNT),
         .M_TDATA_WIDTH(M_TDATA_WIDTH),
         .TUSER_PER_BYTE(TUSER_PER_BYTE)
-    )*/ dwidth_converter (
+    )*/ l2a_converter_0 (
         .aclk(rx_clk),                    // input wire aclk
         .aresetn(rx_resetn),              // input wire aresetn
         .s_axis_tvalid(fifo_1_tvalid),  // input wire s_axis_tvalid
@@ -223,12 +249,12 @@ module lbus_to_axi #(
     wire [(M_TDATA_WIDTH*8)-1:0] m_fifo_tdata;
     wire [M_TDATA_WIDTH+2-1:0] m_fifo_tuser;
 
-    axis_data_fifo_1 /*#(
+    l2a_syncFIFO /*#(
         .TDATA_WIDTH_BYTES(M_TDATA_WIDTH),
         .TUSER_WIDTH_BITS(M_TDATA_WIDTH+1),
         .FIFO_DEPTH_WORDS(FIFO_DEPTH),
         .SYNC_STAGES(SYNC_STAGES)
-    )*/ fifo_1 (
+    )*/ l2a_syncFIFO_0 (
         .s_axis_aresetn(rx_resetn),          // input wire s_axis_aresetn
         .m_axis_aresetn(sys_resetn),          // input wire m_axis_aresetn
         .s_axis_aclk(rx_clk),                // input wire s_axis_aclk
