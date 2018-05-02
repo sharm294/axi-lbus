@@ -25,6 +25,6 @@ There are three IP blocks that are configurable: *axi_to_lbus*, *cmac*, and *lbu
 * *m_axis* - master AXI-S port
 * *overflow_counter* - running counter of the number of dropped packets
 
-##Warning
+## Warning
 
 While it has been tested in simulation, I haven't fully tested in HW yet so there may be some bugs. I have some ideas on a v2 for this project that I will get to in a few months.
