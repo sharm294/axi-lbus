@@ -5,6 +5,10 @@ proc init_gui { IPINST } {
   set Page_0 [ipgui::add_page $IPINST -name "Page 0"]
   set AXIS_INTERFACES [ipgui::add_param $IPINST -name "AXIS_INTERFACES" -parent ${Page_0}]
   set_property tooltip {Number of AXIS Interfaces} ${AXIS_INTERFACES}
+  set S_TDATA_WIDTH [ipgui::add_param $IPINST -name "S_TDATA_WIDTH" -parent ${Page_0} -widget comboBox]
+  set_property tooltip {Width of the Slave data (bytes)} ${S_TDATA_WIDTH}
+  set FIFO_DEPTH [ipgui::add_param $IPINST -name "FIFO_DEPTH" -parent ${Page_0} -widget comboBox]
+  set_property tooltip {Number of 64 byte words to buffer} ${FIFO_DEPTH}
 
 
 }

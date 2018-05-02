@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="lbus_to_axi_tb_time_synth.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lbus_to_axi_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="542720000fs"></ZoomStartTime>
+      <ZoomEndTime time="774501824fs"></ZoomEndTime>
+      <Cursor1Time time="834628000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="229"></NameColumnWidth>
+      <ValueColumnWidth column_width="166"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject type="logic" fp_name="/lbus_to_axi_tb/sys_clk">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/lbus_to_axi_tb/sys_resetn">
+      <obj_property name="ElementShortName">sys_resetn</obj_property>
+      <obj_property name="ObjectShortName">sys_resetn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_clk">
+      <obj_property name="ElementShortName">rx_clk</obj_property>
+      <obj_property name="ObjectShortName">rx_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_resetn">
+      <obj_property name="ElementShortName">rx_resetn</obj_property>
+      <obj_property name="ObjectShortName">rx_resetn</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group115">
+      <obj_property name="label">LBUS_0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/rx_datain0">
+         <obj_property name="ElementShortName">rx_datain0[127:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_datain0[127:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_enain0">
+         <obj_property name="ElementShortName">rx_enain0</obj_property>
+         <obj_property name="ObjectShortName">rx_enain0</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_sopin0">
+         <obj_property name="ElementShortName">rx_sopin0</obj_property>
+         <obj_property name="ObjectShortName">rx_sopin0</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_eopin0">
+         <obj_property name="ElementShortName">rx_eopin0</obj_property>
+         <obj_property name="ObjectShortName">rx_eopin0</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_errin0">
+         <obj_property name="ElementShortName">rx_errin0</obj_property>
+         <obj_property name="ObjectShortName">rx_errin0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/rx_mtyin0">
+         <obj_property name="ElementShortName">rx_mtyin0[3:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_mtyin0[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group116">
+      <obj_property name="label">LBUS_1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/rx_datain1">
+         <obj_property name="ElementShortName">rx_datain1[127:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_datain1[127:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_enain1">
+         <obj_property name="ElementShortName">rx_enain1</obj_property>
+         <obj_property name="ObjectShortName">rx_enain1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_sopin1">
+         <obj_property name="ElementShortName">rx_sopin1</obj_property>
+         <obj_property name="ObjectShortName">rx_sopin1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_eopin1">
+         <obj_property name="ElementShortName">rx_eopin1</obj_property>
+         <obj_property name="ObjectShortName">rx_eopin1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_errin1">
+         <obj_property name="ElementShortName">rx_errin1</obj_property>
+         <obj_property name="ObjectShortName">rx_errin1</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/rx_mtyin1">
+         <obj_property name="ElementShortName">rx_mtyin1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_mtyin1[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group117">
+      <obj_property name="label">LBUS_2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/rx_datain2">
+         <obj_property name="ElementShortName">rx_datain2[127:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_datain2[127:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_enain2">
+         <obj_property name="ElementShortName">rx_enain2</obj_property>
+         <obj_property name="ObjectShortName">rx_enain2</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_sopin2">
+         <obj_property name="ElementShortName">rx_sopin2</obj_property>
+         <obj_property name="ObjectShortName">rx_sopin2</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_eopin2">
+         <obj_property name="ElementShortName">rx_eopin2</obj_property>
+         <obj_property name="ObjectShortName">rx_eopin2</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_errin2">
+         <obj_property name="ElementShortName">rx_errin2</obj_property>
+         <obj_property name="ObjectShortName">rx_errin2</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/rx_mtyin2">
+         <obj_property name="ElementShortName">rx_mtyin2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_mtyin2[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group118">
+      <obj_property name="label">LBUS_3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/rx_datain3">
+         <obj_property name="ElementShortName">rx_datain3[127:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_datain3[127:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_enain3">
+         <obj_property name="ElementShortName">rx_enain3</obj_property>
+         <obj_property name="ObjectShortName">rx_enain3</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_sopin3">
+         <obj_property name="ElementShortName">rx_sopin3</obj_property>
+         <obj_property name="ObjectShortName">rx_sopin3</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_eopin3">
+         <obj_property name="ElementShortName">rx_eopin3</obj_property>
+         <obj_property name="ObjectShortName">rx_eopin3</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/rx_errin3">
+         <obj_property name="ElementShortName">rx_errin3</obj_property>
+         <obj_property name="ObjectShortName">rx_errin3</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/rx_mtyin3">
+         <obj_property name="ElementShortName">rx_mtyin3[3:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_mtyin3[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group133">
+      <obj_property name="label">FIFO_0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_0/s_axis_tvalid">
+         <obj_property name="ElementShortName">s_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_0/s_axis_tuser">
+         <obj_property name="ElementShortName">s_axis_tuser[23:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tuser[23:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_0/s_axis_tready">
+         <obj_property name="ElementShortName">s_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_0/s_axis_tdata">
+         <obj_property name="ElementShortName">s_axis_tdata[511:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tdata[511:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_0/m_axis_tvalid">
+         <obj_property name="ElementShortName">m_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_0/m_axis_tuser">
+         <obj_property name="ElementShortName">m_axis_tuser[23:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tuser[23:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_0/m_axis_tready">
+         <obj_property name="ElementShortName">m_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_0/m_axis_tdata">
+         <obj_property name="ElementShortName">m_axis_tdata[511:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tdata[511:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_0/axis_wr_data_count">
+         <obj_property name="ElementShortName">axis_wr_data_count[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_wr_data_count[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_0/axis_rd_data_count">
+         <obj_property name="ElementShortName">axis_rd_data_count[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_rd_data_count[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_0/axis_data_count">
+         <obj_property name="ElementShortName">axis_data_count[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axis_data_count[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group144">
+      <obj_property name="label">DWIDTH</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/dwidth_converter/m_axis_tdata">
+         <obj_property name="ElementShortName">m_axis_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/dwidth_converter/m_axis_tkeep">
+         <obj_property name="ElementShortName">m_axis_tkeep[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tkeep[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/dwidth_converter/m_axis_tready">
+         <obj_property name="ElementShortName">m_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/dwidth_converter/m_axis_tuser">
+         <obj_property name="ElementShortName">m_axis_tuser[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tuser[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/dwidth_converter/m_axis_tvalid">
+         <obj_property name="ElementShortName">m_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/dwidth_converter/s_axis_tdata">
+         <obj_property name="ElementShortName">s_axis_tdata[511:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tdata[511:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/dwidth_converter/s_axis_tkeep">
+         <obj_property name="ElementShortName">s_axis_tkeep[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tkeep[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/dwidth_converter/s_axis_tready">
+         <obj_property name="ElementShortName">s_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/dwidth_converter/s_axis_tuser">
+         <obj_property name="ElementShortName">s_axis_tuser[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tuser[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/dwidth_converter/s_axis_tvalid">
+         <obj_property name="ElementShortName">s_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tvalid</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group155">
+      <obj_property name="label">FIFO_1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_1/m_axis_tdata">
+         <obj_property name="ElementShortName">m_axis_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_1/m_axis_tready">
+         <obj_property name="ElementShortName">m_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_1/m_axis_tuser">
+         <obj_property name="ElementShortName">m_axis_tuser[9:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tuser[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_1/m_axis_tvalid">
+         <obj_property name="ElementShortName">m_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_1/s_axis_aclk">
+         <obj_property name="ElementShortName">s_axis_aclk</obj_property>
+         <obj_property name="ObjectShortName">s_axis_aclk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_1/s_axis_aresetn">
+         <obj_property name="ElementShortName">s_axis_aresetn</obj_property>
+         <obj_property name="ObjectShortName">s_axis_aresetn</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_1/s_axis_tdata">
+         <obj_property name="ElementShortName">s_axis_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_1/s_axis_tready">
+         <obj_property name="ElementShortName">s_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_1/s_axis_tuser">
+         <obj_property name="ElementShortName">s_axis_tuser[9:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tuser[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/lbus_to_axi_0/fifo_1/s_axis_tvalid">
+         <obj_property name="ElementShortName">s_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tvalid</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group119">
+      <obj_property name="label">AXIS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/s_axis_tvalid">
+         <obj_property name="ElementShortName">s_axis_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/s_axis_tready">
+         <obj_property name="ElementShortName">s_axis_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/s_axis_tdata">
+         <obj_property name="ElementShortName">s_axis_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/lbus_to_axi_tb/s_axis_tkeep">
+         <obj_property name="ElementShortName">s_axis_tkeep[7:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tkeep[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/lbus_to_axi_tb/s_axis_tlast">
+         <obj_property name="ElementShortName">s_axis_tlast</obj_property>
+         <obj_property name="ObjectShortName">s_axis_tlast</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
